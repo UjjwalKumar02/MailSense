@@ -1,4 +1,4 @@
-# MailSense
+# <center>MailSense
 
 A web application that classifies user-provided emails as **spam** or **ham** using a machine learning spam classifier model built with NLP techniques.
 
