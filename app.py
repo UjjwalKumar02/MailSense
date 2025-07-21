@@ -30,17 +30,22 @@ def preprocess_text(text):
 def index():
   if request.method == 'POST':
     input = request.form['message']
+    result=""
     
+    if not input:
+      return render_template('index.html', result="Please enter a message to classify.", input="")
+          
     input_processed = preprocess_text(input)
     input_vectorized = vectorizer.transform([input_processed]) 
   
     prediction = model.predict(input_vectorized)
     result = 'Spam' if prediction[0] == 1 else 'Ham'
-  
-    return render_template('index.html', result=result, input=input)
+    message = str(input)
+    
+    return render_template('index.html', result=result, input="", message=message)
   
   else:
-    return render_template('index.html', result=None)
+    return render_template('index.html', result=None, input="")
 
 
 if __name__ == '__main__':
