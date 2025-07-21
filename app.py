@@ -3,6 +3,16 @@ import joblib
 import re
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
+import nltk
+
+
+def download_nltk_resources():
+  try:
+    nltk.data.find('corpora/stopwords')
+  except LookupError:
+    nltk.download('stopwords')
+
+download_nltk_resources()
 
 
 app = Flask(
