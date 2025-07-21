@@ -12,7 +12,7 @@ app = Flask(
 )
 
 
-model = joblib.load('./models/spam_classifier.pkl')
+model = joblib.load('./models/spamClassifier.pkl')
 vectorizer = joblib.load('./models/vectorizer.pkl')
 
 

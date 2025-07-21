@@ -3,12 +3,11 @@ venv/
 __pycache__/
 *.py[cod]
 
-models/
 
 node_modules/
 dist/
 build/
-static/css/styles.css
+frontend/static/css/styles.css
 
 *.log
 npm-debug.log*

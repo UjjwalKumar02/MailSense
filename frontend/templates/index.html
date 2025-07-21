@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MailSense</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
 </head>
 <body>
-    <nav class="fixed top-0 w-[100%] bg-blue-600">
-        <h1 class="font-semibold text-center text-2xl text-white py-2">MailSense</h1>
+    <nav class="fixed top-0 w-[100%] border-b border-gray-200 py-3">
+        <h1 class="font-semibold text-center text-2xl text-blue-600 ">MailSense</h1>
     </nav>
 
     <div class="flex flex-col justify-center items-center min-h-screen">
-        <h1 class="font-semibold text-3xl mb-6">Spam or Ham?</h1>
-        
-        <form method="POST">
+        <h1 class="font-semibold text-3xl mb-6 text-center">
+            Check Messages for Spam
+        </h1>
+
+        <form method="POST" class="flex flex-col items-center justify-center gap-4 w-full">
+            
             <input 
-                name="message" 
-                placeholder="Enter mail message here"
-                class="bg-gray-100 w-[280px] h-[70px] p-2 rounded-lg "
+                name="message"
+                placeholder="Enter your mail message"
+                class="sm:w-72 w-fit p-2 rounded-lg border border-gray-200 placeholder:text-gray-400"
+                value= {{ input }}
             >
-                {{ input }}
-        </input>
-            <br/>
-            <br/>
+            </input>
+            
             <button 
                 type="submit"
-                class="bg-blue-600 text-white px-6 py-1.5 rounded-lg font-semibold"
+                class="bg-blue-600 text-white px-6 py-1.5 rounded-lg font-semibold hover:bg-blue-700"
             >
                 Classify
             </button>

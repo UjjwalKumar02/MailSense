@@ -1,28 +1,64 @@
-# <center>MailSense</center>
+# MailSense
 
-A web application that classifies user-provided emails as **spam** or **ham** using a machine learning spam classifier model built with NLP techniques.
+MailSense is a web application that classifies user-provided mail messages as **spam** or **ham** using a Machine learning model.
 
-<br/>
+---
 
-## 🚀 Features
+## Technologies Used
 
-- Simple and intuitive web interface
-- Real-time email classification
-- Pre-trained machine learning model for spam detection
-- Built with Flask and Python
-
-<br/>
-
-## 🛠️ Technologies Used
-
-- Python 3
+- Python
 - Flask
 - Natural Language Processing (NLP)
 - scikit-learn
-- pandas
+- Tailwind CSS
 
-<br/>
+---
 
+## Features
+
+- Simple and Clean UI
+- Real-time email classification
+- Pre-trained ML model for spam detection
+
+---
+
+## Installation
+
+
+  
+Install the dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Configure Tailwind  
+```
+npm install -D tailwindcss@3 postcss autoprefixer  
+npx tailwindcss init -p
+```  
+
+Update the tailwind.config.js  
+```
+module.exports = {
+  content: ["./templates/**/*.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Run the command in separate terminal
+```
+cd frontend
+npx tailwindcss -i ./tailwind/input.css -o ./static/css/styles.css --watch
+```  
+
+Run the app in other terminal
+```
+python app.py
+```
+<!-- ---
 ## Tailwind Integration
 
 Terminal  
@@ -66,4 +102,4 @@ templates/index.html
 
 ``` 
 python app.py
-```
+``` -->
