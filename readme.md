@@ -58,3 +58,12 @@ templates/index.html
 ```bash
 <link rel="stylesheet" href="{{ url_for('static', filename='static\css\styles.css') }}">
 ```
+
+
+<br/>
+
+## Run in local
+
+``` 
+python app.py
+```

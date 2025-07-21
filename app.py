@@ -5,7 +5,11 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
 
-app = Flask(__name__)
+app = Flask(
+  __name__,
+  template_folder="frontend/templates",
+  static_folder="frontend/static",
+)
 
 
 model = joblib.load('./models/spam_classifier.pkl')
