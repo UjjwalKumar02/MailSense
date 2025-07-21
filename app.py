@@ -7,10 +7,12 @@ import nltk
 
 
 def download_nltk_resources():
-  try:
-    nltk.data.find('corpora/stopwords')
-  except LookupError:
-    nltk.download('stopwords')
+  resources = ['stopwords', 'wordnet']
+  for resource in resources:
+    try:
+      nltk.data.find(f'corpora/{resource}')
+    except LookupError:
+      nltk.download(resource)
 
 download_nltk_resources()
 
