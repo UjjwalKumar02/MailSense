@@ -2,7 +2,7 @@
 
 A web application that classifies user-submitted email messages as either spam or ham using a machine learning model built with natural language processing (NLP) techniques.
 
-![Image](frontend\public\app.png)
+![Image](frontend/public/app.png)
 
 
 ## Technologies Used
