@@ -6,4 +6,4 @@ scikit-learn
 matplotlib
 seaborn
 imbalanced-learn
-gunicorn
+gunicorn #gunicorn app:app

@@ -1,26 +1,27 @@
 # MailSense
 
-MailSense is a web application that classifies user-submitted email messages as either spam or ham using a machine learning model built with natural language processing (NLP) techniques.
+A web application that classifies user-submitted email messages as either spam or ham using a machine learning model built with natural language processing (NLP) techniques.
 
-<br>
+![Image](frontend\public\app.png)
+
 
 ## Technologies Used
 
 Python | Flask | Natural Language Processing (NLP) | scikit-learn | Tailwind CSS | HTML
 
-<br>
+
 
 ## Features
 
-- Simple and Clean UI
 - Real-time email classification
 - Pre-trained ML model for spam detection
+- Simple and Clean UI
 
-<br>
+
 
 ## Setup locally
 
-1. Clone the repo.  
+1. Fork the repo.  
 
 2. Install the dependencies.
 ```
@@ -39,4 +40,4 @@ python app.py
 ```
 <br>
 
-### Feel free to connect for suggestions and collaboration.
+#### Feel free to connect for suggestions and collaboration.
