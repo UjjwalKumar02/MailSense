@@ -2,14 +2,14 @@
 
 A web application that classifies user-submitted email messages as either spam or ham using a machine learning model built with natural language processing (NLP) techniques.
 
-![Image](frontend/public/app.png)
+<br>
 
 
 ## Technologies Used
 
 Python | Flask | Natural Language Processing (NLP) | scikit-learn | Tailwind CSS | HTML
 
-
+<br>
 
 ## Features
 
@@ -17,7 +17,7 @@ Python | Flask | Natural Language Processing (NLP) | scikit-learn | Tailwind CSS
 - Pre-trained ML model for spam detection
 - Simple and Clean UI
 
-
+<br>
 
 ## Setup locally
 
